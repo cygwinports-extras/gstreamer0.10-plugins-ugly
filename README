@@ -1,0 +1,112 @@
+gstreamer010-plugins-ugly
+------------------------------------------
+'Ugly' plugins for the GStreamer media framework.
+
+Runtime requirements:
+  cygwin-1.5.19-4
+  glib2-2.8.6-1
+  gstreamer010-0.10.4-1
+  gstreamer010-plugins-base-0.10.5-1
+
+Build requirements:
+(besides corresponding devel packages)
+  cygwin-1.5.19-4
+  autoconf2.5-2.59-3
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  cygport-0.1.6-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  libtool1.5-1.5.20-2
+  make-3.80-1
+  pkg-config-0.20-1
+  sed-4.1.4-1
+
+Canonical website:
+  http://gstreamer.freedesktop.org/
+
+Canonical download:
+  http://gstreamer.freedesktop.org/src/gst-plugins-ugly/
+
+-------------------------------------------
+
+Build instructions:
+  unpack gstreamer010-plugins-ugly-0.10.3-1-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./gstreamer010-plugins-ugly-0.10.3-1.cygport all
+
+This will create:
+  /usr/src/gstreamer010-plugins-ugly-0.10.3-1-src.tar.bz2
+  /usr/src/gstreamer010-plugins-ugly-0.10.3-1.tar.bz2
+  /usr/src/gstreamer010-plugins-ugly-doc-0.10.3-1.tar.bz2
+
+-------------------------------------------
+
+Files included in the main package:
+
+  /usr/lib/gstreamer-0.10/cyggstasf.dll
+  /usr/lib/gstreamer-0.10/cyggstdvdlpcmdec.dll
+  /usr/lib/gstreamer-0.10/cyggstdvdsub.dll
+  /usr/lib/gstreamer-0.10/cyggstiec958.dll
+  /usr/lib/gstreamer-0.10/cyggstmpegaudioparse.dll
+  /usr/lib/gstreamer-0.10/cyggstmpegstream.dll
+  /usr/lib/gstreamer-0.10/cyggstrmdemux.dll
+  /usr/lib/gstreamer-0.10/libgstasf.la
+  /usr/lib/gstreamer-0.10/libgstdvdlpcmdec.la
+  /usr/lib/gstreamer-0.10/libgstdvdsub.la
+  /usr/lib/gstreamer-0.10/libgstiec958.la
+  /usr/lib/gstreamer-0.10/libgstmpegaudioparse.la
+  /usr/lib/gstreamer-0.10/libgstmpegstream.la
+  /usr/lib/gstreamer-0.10/libgstrmdemux.la
+  /usr/share/doc/Cygwin/gstreamer010-plugins-ugly-0.10.3.README
+  /usr/share/doc/Cygwin/gstreamer010-plugins-ugly-doc-0.10.3.README
+  /usr/share/doc/gstreamer010-plugins-ugly-0.10.3/AUTHORS
+  /usr/share/doc/gstreamer010-plugins-ugly-0.10.3/COPYING
+  /usr/share/doc/gstreamer010-plugins-ugly-0.10.3/ChangeLog
+  /usr/share/doc/gstreamer010-plugins-ugly-0.10.3/INSTALL
+  /usr/share/doc/gstreamer010-plugins-ugly-0.10.3/NEWS
+  /usr/share/doc/gstreamer010-plugins-ugly-0.10.3/README
+
+Files included in the doc package:
+
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/ch01.html
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/ch02.html
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-0.10.devhelp
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-plugin-dvdlpcmdec.html
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-plugin-lame.html
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-plugin-mad.html
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-plugin-mpegaudioparse.html
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-plugin-rmdemux.html
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/home.png
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/index.html
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/index.sgml
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/left.png
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/right.png
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/style.css
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/up.png
+
+------------------
+
+Port Notes:
+
+----- version 0.10.3-1 -----
+Version bump.
+External plugins will be built from separate source packages.
+
+----- version 0.10.2-1 -----
+Version bump.
+Removed plugin import libraries.
+Additional external plugins: dvdread.
+
+----- version 0.10.1-1 -----
+Version bump.
+
+----- version 0.10.0-1 -----
+Initial release of 0.10 stable branch for Cygwin.
+External plugins: a52dec lame mad.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

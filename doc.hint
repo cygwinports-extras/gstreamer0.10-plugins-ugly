@@ -1,0 +1,4 @@
+category: Audio
+external-source: gstreamer010-plugins-ugly
+sdesc: "Ugly plugins for the GStreamer multimedia framework (documentation, 0.10 branch)"
+ldesc: "Ugly plugins for the GStreamer multimedia framework (0.10 branch)"
