@@ -44,8 +44,9 @@ This will create:
 
 -------------------------------------------
 
-Files included in the main package:
+Files included in the binary packages:
 
+(gstreamer010-plugins-ugly)
   /usr/lib/gstreamer-0.10/cyggstasf.dll
   /usr/lib/gstreamer-0.10/cyggstdvdlpcmdec.dll
   /usr/lib/gstreamer-0.10/cyggstdvdsub.dll
@@ -60,17 +61,54 @@ Files included in the main package:
   /usr/lib/gstreamer-0.10/libgstmpegaudioparse.la
   /usr/lib/gstreamer-0.10/libgstmpegstream.la
   /usr/lib/gstreamer-0.10/libgstrmdemux.la
-  /usr/share/doc/Cygwin/gstreamer010-plugins-ugly-0.10.3.README
-  /usr/share/doc/Cygwin/gstreamer010-plugins-ugly-doc-0.10.3.README
-  /usr/share/doc/gstreamer010-plugins-ugly-0.10.3/AUTHORS
-  /usr/share/doc/gstreamer010-plugins-ugly-0.10.3/COPYING
-  /usr/share/doc/gstreamer010-plugins-ugly-0.10.3/ChangeLog
-  /usr/share/doc/gstreamer010-plugins-ugly-0.10.3/INSTALL
-  /usr/share/doc/gstreamer010-plugins-ugly-0.10.3/NEWS
-  /usr/share/doc/gstreamer010-plugins-ugly-0.10.3/README
+  /usr/share/doc/Cygwin/gstreamer010-plugins-ugly-0.10.4.README
+  /usr/share/doc/gstreamer010-plugins-ugly-0.10.4/ABOUT-NLS
+  /usr/share/doc/gstreamer010-plugins-ugly-0.10.4/AUTHORS
+  /usr/share/doc/gstreamer010-plugins-ugly-0.10.4/COPYING
+  /usr/share/doc/gstreamer010-plugins-ugly-0.10.4/ChangeLog
+  /usr/share/doc/gstreamer010-plugins-ugly-0.10.4/INSTALL
+  /usr/share/doc/gstreamer010-plugins-ugly-0.10.4/NEWS
+  /usr/share/doc/gstreamer010-plugins-ugly-0.10.4/README
+  /usr/share/locale/af/LC_MESSAGES/gst-plugins-ugly-0.10.mo
+  /usr/share/locale/az/LC_MESSAGES/gst-plugins-ugly-0.10.mo
+  /usr/share/locale/cs/LC_MESSAGES/gst-plugins-ugly-0.10.mo
+  /usr/share/locale/en_GB/LC_MESSAGES/gst-plugins-ugly-0.10.mo
+  /usr/share/locale/hu/LC_MESSAGES/gst-plugins-ugly-0.10.mo
+  /usr/share/locale/it/LC_MESSAGES/gst-plugins-ugly-0.10.mo
+  /usr/share/locale/nb/LC_MESSAGES/gst-plugins-ugly-0.10.mo
+  /usr/share/locale/nl/LC_MESSAGES/gst-plugins-ugly-0.10.mo
+  /usr/share/locale/or/LC_MESSAGES/gst-plugins-ugly-0.10.mo
+  /usr/share/locale/sq/LC_MESSAGES/gst-plugins-ugly-0.10.mo
+  /usr/share/locale/sr/LC_MESSAGES/gst-plugins-ugly-0.10.mo
+  /usr/share/locale/sv/LC_MESSAGES/gst-plugins-ugly-0.10.mo
+  /usr/share/locale/uk/LC_MESSAGES/gst-plugins-ugly-0.10.mo
+  /usr/share/locale/vi/LC_MESSAGES/gst-plugins-ugly-0.10.mo
 
-Files included in the doc package:
+(gstreamer010-plugins-a52dec)
+  /usr/lib/gstreamer-0.10/cyggsta52dec.dll
+  /usr/lib/gstreamer-0.10/libgsta52dec.la
 
+(gstreamer010-plugins-dvdnav)
+  /usr/lib/gstreamer-0.10/cyggstdvdnav.dll
+  /usr/lib/gstreamer-0.10/libgstdvdnav.la
+
+(gstreamer010-plugins-dvdread)
+  /usr/lib/gstreamer-0.10/cyggstdvdread.dll
+  /usr/lib/gstreamer-0.10/libgstdvdread.la
+
+(gstreamer010-plugins-lame)
+  /usr/lib/gstreamer-0.10/cyggstlame.dll
+  /usr/lib/gstreamer-0.10/libgstlame.la
+
+(gstreamer010-plugins-mad)
+  /usr/lib/gstreamer-0.10/cyggstmad.dll
+  /usr/lib/gstreamer-0.10/libgstmad.la
+
+(gstreamer010-plugins-mpeg2dec)
+  /usr/lib/gstreamer-0.10/cyggstmpeg2dec.dll
+  /usr/lib/gstreamer-0.10/libgstmpeg2dec.la
+
+(gstreamer010-plugins-ugly-doc)
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/ch01.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/ch02.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-0.10.devhelp
@@ -78,7 +116,9 @@ Files included in the doc package:
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-plugin-lame.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-plugin-mad.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-plugin-mpegaudioparse.html
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-plugin-mpegstream.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-plugin-rmdemux.html
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-plugin-siddec.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/home.png
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/index.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/index.sgml

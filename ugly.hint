@@ -1,0 +1,4 @@
+category: Audio
+requires: cygwin glib2 gstreamer010 gstreamer010-plugins-base
+sdesc: "Ugly plugins for the GStreamer multimedia framework (0.10 branch)"
+ldesc: "Ugly plugins for the GStreamer multimedia framework (0.10 branch)"

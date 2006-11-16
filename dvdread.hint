@@ -1,0 +1,6 @@
+category: Audio
+requires: cygwin glib2 gstreamer010 libdvdread3
+external-source: gstreamer010-plugins-ugly
+sdesc: "DVDRead plugin for the GStreamer multimedia framework (0.10 branch)"
+ldesc: "DVDRead plugin for the GStreamer multimedia framework (0.10 branch)"
+

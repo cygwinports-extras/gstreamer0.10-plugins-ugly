@@ -1,0 +1,9 @@
+usr/lib/gstreamer-0.10/*gstasf.*
+usr/lib/gstreamer-0.10/*gstdvdlpcmdec.*
+usr/lib/gstreamer-0.10/*gstdvdsub.*
+usr/lib/gstreamer-0.10/*gstiec958.*
+usr/lib/gstreamer-0.10/*gstmpegaudioparse.*
+usr/lib/gstreamer-0.10/*gstmpegstream.*
+usr/lib/gstreamer-0.10/*gstrmdemux.*
+usr/share/doc/
+usr/share/locale/
