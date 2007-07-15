@@ -3,18 +3,18 @@ gstreamer010-plugins-ugly
 'Ugly' plugins for the GStreamer media framework.
 
 Runtime requirements:
-  cygwin-1.5.22-1
-  glib2-2.12.4-1
-  gstreamer010-0.10.11-1
-  gstreamer010-plugins-base-0.10.11-1
+  cygwin-1.5.24-2
+  glib2-2.12.12-2
+  gstreamer010-0.10.13-1
+  gstreamer010-plugins-base-0.10.13-1
 
 (a52dec)
   liba52_0-0.7.4-2
-  liboil03-0.3.10-1
+  liboil03-0.3.11-1
 (dvdread)
   libdvdread3-0.9.7-1
 (lame)
-  libmp3lame0-3.96.1-1
+  libmp3lame0-3.97-1
 (mad)
   libid3tag-0.15.1b-2
   libmad-0.15.1b-2
@@ -25,17 +25,17 @@ Runtime requirements:
 
 Build requirements:
 (besides corresponding devel packages)
-  cygwin-1.5.22-1
-  autoconf2.5-2.60-2
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.2.7-1
-  gawk-3.1.5-2
-  gcc-core-3.4.4-1
-  libtool1.5-1.5.20-2
-  make-3.80-1
-  pkg-config-0.20-1
-  sed-4.1.4-1
+  cygport-0.3.5-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  pkg-config-0.21-1
+  sed-4.1.5-2
 
 Canonical website:
   http://gstreamer.freedesktop.org/
@@ -46,16 +46,16 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gstreamer010-plugins-ugly-0.10.5-1-src.tar.bz2
+  unpack gstreamer010-plugins-ugly-0.10.6-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gstreamer010-plugins-ugly-0.10.5-1.cygport all
+  cygport ./gstreamer010-plugins-ugly-0.10.6-1.cygport all
 
 This will create:
-  /usr/src/gstreamer010-plugins-ugly-0.10.5-1-src.tar.bz2
-  /usr/src/gstreamer010-plugins-ugly-0.10.5-1.tar.bz2
-  /usr/src/gstreamer010-plugins-ugly-doc-0.10.5-1.tar.bz2
+  /usr/src/gstreamer010-plugins-ugly-0.10.6-1-src.tar.bz2
+  /usr/src/gstreamer010-plugins-ugly-0.10.6-1.tar.bz2
+  /usr/src/gstreamer010-plugins-ugly-doc-0.10.6-1.tar.bz2
 
 -------------------------------------------
 
@@ -76,14 +76,14 @@ Files included in the binary packages:
   /usr/lib/gstreamer-0.10/libgstmpegaudioparse.la
   /usr/lib/gstreamer-0.10/libgstmpegstream.la
   /usr/lib/gstreamer-0.10/libgstrmdemux.la
-  /usr/share/doc/Cygwin/gstreamer010-plugins-ugly-0.10.5.README
-  /usr/share/doc/gstreamer010-plugins-ugly-0.10.5/ABOUT-NLS
-  /usr/share/doc/gstreamer010-plugins-ugly-0.10.5/AUTHORS
-  /usr/share/doc/gstreamer010-plugins-ugly-0.10.5/COPYING
-  /usr/share/doc/gstreamer010-plugins-ugly-0.10.5/ChangeLog
-  /usr/share/doc/gstreamer010-plugins-ugly-0.10.5/INSTALL
-  /usr/share/doc/gstreamer010-plugins-ugly-0.10.5/NEWS
-  /usr/share/doc/gstreamer010-plugins-ugly-0.10.5/README
+  /usr/share/doc/Cygwin/gstreamer010-plugins-ugly-0.10.6.README
+  /usr/share/doc/gstreamer010-plugins-ugly-0.10.6/ABOUT-NLS
+  /usr/share/doc/gstreamer010-plugins-ugly-0.10.6/AUTHORS
+  /usr/share/doc/gstreamer010-plugins-ugly-0.10.6/COPYING
+  /usr/share/doc/gstreamer010-plugins-ugly-0.10.6/ChangeLog
+  /usr/share/doc/gstreamer010-plugins-ugly-0.10.6/INSTALL
+  /usr/share/doc/gstreamer010-plugins-ugly-0.10.6/NEWS
+  /usr/share/doc/gstreamer010-plugins-ugly-0.10.6/README
   /usr/share/locale/af/LC_MESSAGES/gst-plugins-ugly-0.10.mo
   /usr/share/locale/az/LC_MESSAGES/gst-plugins-ugly-0.10.mo
   /usr/share/locale/cs/LC_MESSAGES/gst-plugins-ugly-0.10.mo
@@ -145,6 +145,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 0.10.6-1 -----
+Version bump.
 
 ----- version 0.10.5-1 -----
 Version bump.
