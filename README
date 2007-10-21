@@ -4,13 +4,13 @@ gstreamer010-plugins-ugly
 
 Runtime requirements:
   cygwin-1.5.24-2
-  glib2-2.12.12-2
-  gstreamer010-0.10.13-1
-  gstreamer010-plugins-base-0.10.13-1
+  glib2-2.12.13-1
+  gstreamer010-0.10.14-1
+  gstreamer010-plugins-base-0.10.14-1
 
 (a52dec)
   liba52_0-0.7.4-2
-  liboil03-0.3.11-1
+  liboil03-0.3.11-2
 (dvdread)
   libdvdread3-0.9.7-1
 (lame)
@@ -29,7 +29,7 @@ Build requirements:
   autoconf2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.3.5-1
+  cygport-0.3.6-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
   libtool1.5-1.5.23a-2
@@ -56,6 +56,13 @@ This will create:
   /usr/src/gstreamer010-plugins-ugly-0.10.6-1-src.tar.bz2
   /usr/src/gstreamer010-plugins-ugly-0.10.6-1.tar.bz2
   /usr/src/gstreamer010-plugins-ugly-doc-0.10.6-1.tar.bz2
+
+  /usr/src/gstreamer010-plugins-a52dec-0.10.6-1.tar.bz2
+  /usr/src/gstreamer010-plugins-dvdread-0.10.6-1.tar.bz2
+  /usr/src/gstreamer010-plugins-lame-0.10.6-1.tar.bz2
+  /usr/src/gstreamer010-plugins-mad-0.10.6-1.tar.bz2
+  /usr/src/gstreamer010-plugins-mpeg2dec-0.10.6-1.tar.bz2
+  /usr/src/gstreamer010-plugins-sidplay-0.10.6-1.tar.bz2
 
 -------------------------------------------
 
@@ -145,6 +152,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 0.10.6-2 -----
+Rebuilt for updated dependencies.
 
 ----- version 0.10.6-1 -----
 Version bump.
