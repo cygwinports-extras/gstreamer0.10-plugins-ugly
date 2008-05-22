@@ -1,0 +1,17 @@
+GST_PLUGINS_EXT="a52dec dvdread lame mad mpeg2dec sidplay"
+inherit gst-plugins
+
+PKG_NAMES="${PN} ${PN}-doc"
+PKG_HINTS="ugly doc"
+PKG_LISTS="ugly doc"
+PKG_CONTENTS[1]='usr/share/gtk-doc/'
+
+n=2
+for ext in ${GST_PLUGINS_EXT}
+do
+	PKG_NAMES+=" ${PN%-ugly}-${ext}"
+	PKG_HINTS+=" ${ext}"
+	PKG_LISTS+=" ${ext}"
+	PKG_CONTENTS[$((n++))]=" usr/lib/gstreamer-${PV_MAJ_MIN}/*gst${ext%play}.*"
+done
+unset n
