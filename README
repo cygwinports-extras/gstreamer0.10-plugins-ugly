@@ -3,14 +3,16 @@ gstreamer010-plugins-ugly
 'Ugly' plugins for the GStreamer media framework.
 
 Runtime requirements:
-  cygwin-1.5.25-11
-  glib2-2.14.6-1
-  gstreamer010-0.10.19-1
-  gstreamer010-plugins-base-0.10.19-1
+  cygwin-1.5.25-15
+  glib2-2.16.6-1
+  gstreamer010-0.10.21-1
+  gstreamer010-plugins-base-0.10.21-1
 
 (a52dec)
   liba52_0-0.7.4-2
   liboil03-0.3.11-2
+(cdio)
+  libcdio7-0.80-2
 (dvdread)
   libdvdread3-0.9.7-1
 (lame)
@@ -25,16 +27,17 @@ Runtime requirements:
 
 Build requirements:
 (besides corresponding devel packages)
-  autoconf2.5-2.61-1
+  autoconf2.5-2.63-1
   automake1.9-1.9.6-2
-  binutils-20060817-1
-  cygport-0.3.10-1
+  binutils-20080624-2
+  cygport-0.4.2-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
   gcc-g++-3.4.4-3
-  libtool-2.2.2-2
+  gettext-devel-0.17-1
+  libtool-2.2.6a-1
   make-3.81-1
-  pkg-config-0.21-1
+  pkg-config-0.23a-2
   sed-4.1.5-2
 
 Canonical website:
@@ -46,23 +49,24 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gstreamer010-plugins-ugly-0.10.8-X-src.tar.bz2
+  unpack gstreamer010-plugins-ugly-0.10.9-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gstreamer010-plugins-ugly-0.10.8-X.cygport all
+  cygport ./gstreamer010-plugins-ugly-0.10.9-X.cygport all
 
 This will create:
-  /usr/src/gstreamer010-plugins-ugly-0.10.8-X-src.tar.bz2
-  /usr/src/gstreamer010-plugins-ugly-0.10.8-X.tar.bz2
-  /usr/src/gstreamer010-plugins-ugly-doc-0.10.8-X.tar.bz2
+  /usr/src/gstreamer010-plugins-ugly-0.10.9-X-src.tar.bz2
+  /usr/src/gstreamer010-plugins-ugly-0.10.9-X.tar.bz2
+  /usr/src/gstreamer010-plugins-ugly-doc-0.10.9-X.tar.bz2
 
-  /usr/src/gstreamer010-plugins-a52dec-0.10.8-X.tar.bz2
-  /usr/src/gstreamer010-plugins-dvdread-0.10.8-X.tar.bz2
-  /usr/src/gstreamer010-plugins-lame-0.10.8-X.tar.bz2
-  /usr/src/gstreamer010-plugins-mad-0.10.8-X.tar.bz2
-  /usr/src/gstreamer010-plugins-mpeg2dec-0.10.8-X.tar.bz2
-  /usr/src/gstreamer010-plugins-sidplay-0.10.8-X.tar.bz2
+  /usr/src/gstreamer010-plugins-a52dec-0.10.9-X.tar.bz2
+  /usr/src/gstreamer010-plugins-cdio-0.10.9-X.tar.bz2
+  /usr/src/gstreamer010-plugins-dvdread-0.10.9-X.tar.bz2
+  /usr/src/gstreamer010-plugins-lame-0.10.9-X.tar.bz2
+  /usr/src/gstreamer010-plugins-mad-0.10.9-X.tar.bz2
+  /usr/src/gstreamer010-plugins-mpeg2dec-0.10.9-X.tar.bz2
+  /usr/src/gstreamer010-plugins-sidplay-0.10.9-X.tar.bz2
 
 -------------------------------------------
 
@@ -83,31 +87,47 @@ Files included in the binary packages:
   /usr/lib/gstreamer-0.10/libgstmpegaudioparse.la
   /usr/lib/gstreamer-0.10/libgstmpegstream.la
   /usr/lib/gstreamer-0.10/libgstrmdemux.la
-  /usr/share/doc/gstreamer010-plugins-ugly-0.10.8/ABOUT-NLS
-  /usr/share/doc/gstreamer010-plugins-ugly-0.10.8/AUTHORS
-  /usr/share/doc/gstreamer010-plugins-ugly-0.10.8/COPYING
-  /usr/share/doc/gstreamer010-plugins-ugly-0.10.8/ChangeLog
-  /usr/share/doc/gstreamer010-plugins-ugly-0.10.8/INSTALL
-  /usr/share/doc/gstreamer010-plugins-ugly-0.10.8/NEWS
-  /usr/share/doc/gstreamer010-plugins-ugly-0.10.8/README
+  /usr/share/doc/gstreamer010-plugins-ugly-0.10.9/ABOUT-NLS
+  /usr/share/doc/gstreamer010-plugins-ugly-0.10.9/AUTHORS
+  /usr/share/doc/gstreamer010-plugins-ugly-0.10.9/COPYING
+  /usr/share/doc/gstreamer010-plugins-ugly-0.10.9/ChangeLog
+  /usr/share/doc/gstreamer010-plugins-ugly-0.10.9/INSTALL
+  /usr/share/doc/gstreamer010-plugins-ugly-0.10.9/NEWS
+  /usr/share/doc/gstreamer010-plugins-ugly-0.10.9/README
   /usr/share/locale/af/LC_MESSAGES/gst-plugins-ugly-0.10.mo
   /usr/share/locale/az/LC_MESSAGES/gst-plugins-ugly-0.10.mo
+  /usr/share/locale/bg/LC_MESSAGES/gst-plugins-ugly-0.10.mo
   /usr/share/locale/cs/LC_MESSAGES/gst-plugins-ugly-0.10.mo
+  /usr/share/locale/da/LC_MESSAGES/gst-plugins-ugly-0.10.mo
   /usr/share/locale/en_GB/LC_MESSAGES/gst-plugins-ugly-0.10.mo
+  /usr/share/locale/es/LC_MESSAGES/gst-plugins-ugly-0.10.mo
+  /usr/share/locale/fi/LC_MESSAGES/gst-plugins-ugly-0.10.mo
+  /usr/share/locale/fr/LC_MESSAGES/gst-plugins-ugly-0.10.mo
   /usr/share/locale/hu/LC_MESSAGES/gst-plugins-ugly-0.10.mo
+  /usr/share/locale/id/LC_MESSAGES/gst-plugins-ugly-0.10.mo
   /usr/share/locale/it/LC_MESSAGES/gst-plugins-ugly-0.10.mo
+  /usr/share/locale/lt/LC_MESSAGES/gst-plugins-ugly-0.10.mo
   /usr/share/locale/nb/LC_MESSAGES/gst-plugins-ugly-0.10.mo
   /usr/share/locale/nl/LC_MESSAGES/gst-plugins-ugly-0.10.mo
   /usr/share/locale/or/LC_MESSAGES/gst-plugins-ugly-0.10.mo
+  /usr/share/locale/pl/LC_MESSAGES/gst-plugins-ugly-0.10.mo
+  /usr/share/locale/pt_BR/LC_MESSAGES/gst-plugins-ugly-0.10.mo
+  /usr/share/locale/ru/LC_MESSAGES/gst-plugins-ugly-0.10.mo
+  /usr/share/locale/sk/LC_MESSAGES/gst-plugins-ugly-0.10.mo
   /usr/share/locale/sq/LC_MESSAGES/gst-plugins-ugly-0.10.mo
   /usr/share/locale/sr/LC_MESSAGES/gst-plugins-ugly-0.10.mo
   /usr/share/locale/sv/LC_MESSAGES/gst-plugins-ugly-0.10.mo
   /usr/share/locale/uk/LC_MESSAGES/gst-plugins-ugly-0.10.mo
   /usr/share/locale/vi/LC_MESSAGES/gst-plugins-ugly-0.10.mo
+  /usr/share/locale/zh_CN/LC_MESSAGES/gst-plugins-ugly-0.10.mo
 
 (gstreamer010-plugins-a52dec)
   /usr/lib/gstreamer-0.10/cyggsta52dec.dll
   /usr/lib/gstreamer-0.10/libgsta52dec.la
+
+(gstreamer010-plugins-cdio)
+  /usr/lib/gstreamer-0.10/cyggstcdio.dll
+  /usr/lib/gstreamer-0.10/libgstcdio.la
 
 (gstreamer010-plugins-dvdread)
   /usr/lib/gstreamer-0.10/cyggstdvdread.dll
@@ -133,13 +153,39 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/ch01.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/ch02.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-0.10.devhelp
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-0.10.devhelp2
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-a52dec.html
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-amrnbdec.html
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-amrnbenc.html
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-amrnbparse.html
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-cdiocddasrc.html
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-lame.html
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-mad.html
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-plugin-a52dec.html
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-plugin-amrnb.html
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-plugin-asf.html
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-plugin-cdio.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-plugin-dvdlpcmdec.html
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-plugin-dvdnav.html
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-plugin-dvdread.html
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-plugin-dvdsub.html
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-plugin-iec958.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-plugin-lame.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-plugin-mad.html
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-plugin-mpeg2dec.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-plugin-mpegaudioparse.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-plugin-mpegstream.html
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-plugin-realmedia.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-plugin-rmdemux.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-plugin-siddec.html
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-plugin-synaesthesia.html
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-rademux.html
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-rdtmanager.html
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-rtspreal.html
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-rtspwms.html
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-siddec.html
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-synaesthesia.html
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-xingmux.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/home.png
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/index.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/index.sgml
@@ -151,6 +197,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 0.10.9-1 -----
+Version bump.
 
 ----- version 0.10.8-1 -----
 Version bump.
