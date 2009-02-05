@@ -1,6 +1,6 @@
 category: Audio
-requires: cygwin glib2 gstreamer010 gstreamer010-plugins-base libcdio7
-external-source: gstreamer010-plugins-ugly
+requires: cygwin libglib2.0_0 libgstcdda0.10_0 libgstreamer0.10_0 libcdio10
+external-source: gstreamer0.10-plugins-ugly
 sdesc: "CDIO plugin for the GStreamer multimedia framework (0.10 branch)"
 ldesc: "CDIO plugin for the GStreamer multimedia framework (0.10 branch)"
 

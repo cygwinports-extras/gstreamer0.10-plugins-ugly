@@ -1,0 +1,15 @@
+GST_PLUGINS_EXT="a52dec cdio dvdread lame mad mpeg2dec sidplay"
+inherit gst-plugins
+
+PKG_NAMES="${PN}"
+PKG_HINTS="ugly"
+
+for ext in ${GST_PLUGINS_EXT}
+do
+	PKG_NAMES+=" ${PN%-ugly}-${ext}"
+	PKG_HINTS+=" ${ext}"
+	declare gstreamer0_10_plugins_${ext}_CONTENTS=" usr/lib/gstreamer-${PV_MAJ_MIN}/*gst${ext%play}.*"
+	gstreamer0_10_plugins_ugly_CONTENTS+=" --exclude=*gst${ext%play}.*"
+done
+
+gstreamer0_10_plugins_ugly_CONTENTS+=" usr/"
