@@ -1,4 +1,4 @@
-GST_PLUGINS_EXT="a52dec cdio dvdread lame mad mpeg2dec sidplay"
+GST_PLUGINS_EXT="a52dec cdio dvdread lame mad mpeg2dec sidplay twolame"
 inherit gst-plugins
 
 PKG_NAMES="${PN}"

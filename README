@@ -3,45 +3,49 @@ gstreamer0.10-plugins-ugly
 'Ugly' plugins for the GStreamer media framework.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libglib2.0_0-2.18.4-1
-  libgstreamer0.10_0-0.10.22-1
-  libgstriff0.10_0-0.10.22-1
-  libgstrtsp0.10_0-0.10.22-1
-  libgstsdp0.10_0-0.10.22-1
-  libgsttag0.10_0-0.10.22-1
+  cygwin-1.7.0-45
+  libgcc1-4.3.2-2
+  libglib2.0_0-2.20.0-10
+  libgstreamer0.10_0-0.10.22-10
+  libgstriff0.10_0-0.10.22-10
+  libgstrtsp0.10_0-0.10.22-10
+  libgstsdp0.10_0-0.10.22-10
+  libgsttag0.10_0-0.10.22-10
 (a52dec)
-  liba52_0-0.7.4-2
-  liboil0.3_0-0.3.15-1
+  liba52_0-0.7.4-10
+  liboil0.3_0-0.3.15-10
 (cdio)
-  libcdio10-0.81-1
-  libgstcdda0.10_0-0.10.22-1
+  libcdio10-0.81-10
+  libgstcdda0.10_0-0.10.22-10
 (dvdread)
-  libdvdread4-4.1.3-1
+  libdvdread4-4.1.3-10
 (lame)
-  libmp3lame0-3.97-1
+  libmp3lame0-3.98.2-10
 (mad)
-  libgstaudio0.10_0-0.10.22-1
-  libid3tag0-0.15.1b-5
-  libmad0-0.15.1b-5
+  libgstaudio0.10_0-0.10.22-10
+  libid3tag0-0.15.1b-10
+  libmad0-0.15.1b-10
 (mpeg2dec)
-  libmpeg2_0-0.5.1-1
+  libmpeg2_0-0.5.1-10
 (sidplay)
-  libsidplay1-1.36.59-1
+  libsidplay1-1.36.59-10
+  libstdc++6-4.3.2-2
+(twolame)
+  libtwolame0-0.3.12-10
 
 Build requirements:
 (besides corresponding devel packages)
-  autoconf2.5-2.63-1
-  automake1.9-1.9.6-3
+  autoconf2.5-2.63-10
+  automake1.9-1.9.6-10
   binutils-20080624-2
-  cygport-0.4.3-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  gcc-g++-3.4.4-3
-  gettext-devel-0.17-2
-  libtool-2.2.6a-1
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  gcc4-g++-4.3.2-2
+  gettext-devel-0.17-10
+  libtool-2.2.7a-12
   make-3.81-2
-  pkg-config-0.23a-2
+  pkg-config-0.23b-10
   sed-4.1.5-2
 
 Canonical website:
@@ -53,23 +57,24 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gstreamer0.10-plugins-ugly-0.10.10-X-src.tar.bz2
+  unpack gstreamer0.10-plugins-ugly-0.10.11-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gstreamer0.10-plugins-ugly-0.10.10-X.cygport all
+  cygport ./gstreamer0.10-plugins-ugly-0.10.11-X.cygport all
 
 This will create:
-  /usr/src/gstreamer0.10-plugins-ugly-0.10.10-X-src.tar.bz2
-  /usr/src/gstreamer0.10-plugins-ugly-0.10.10-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-ugly-0.10.11-X-src.tar.bz2
+  /usr/src/gstreamer0.10-plugins-ugly-0.10.11-X.tar.bz2
 
-  /usr/src/gstreamer0.10-plugins-a52dec-0.10.10-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-cdio-0.10.10-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-dvdread-0.10.10-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-lame-0.10.10-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-mad-0.10.10-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-mpeg2dec-0.10.10-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-sidplay-0.10.10-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-a52dec-0.10.11-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-cdio-0.10.11-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-dvdread-0.10.11-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-lame-0.10.11-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-mad-0.10.11-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-mpeg2dec-0.10.11-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-sidplay-0.10.11-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-twolame-0.10.11-X.tar.bz2
 
 -------------------------------------------
 
@@ -83,6 +88,7 @@ Files included in the binary packages:
   /usr/lib/gstreamer-0.10/cyggstmpegaudioparse.dll
   /usr/lib/gstreamer-0.10/cyggstmpegstream.dll
   /usr/lib/gstreamer-0.10/cyggstrmdemux.dll
+  /usr/lib/gstreamer-0.10/cyggstsynaesthesia.dll
   /usr/lib/gstreamer-0.10/libgstasf.la
   /usr/lib/gstreamer-0.10/libgstdvdlpcmdec.la
   /usr/lib/gstreamer-0.10/libgstdvdsub.la
@@ -90,13 +96,12 @@ Files included in the binary packages:
   /usr/lib/gstreamer-0.10/libgstmpegaudioparse.la
   /usr/lib/gstreamer-0.10/libgstmpegstream.la
   /usr/lib/gstreamer-0.10/libgstrmdemux.la
-  /usr/share/doc/gstreamer0.10-plugins-ugly-0.10.10/ABOUT-NLS
-  /usr/share/doc/gstreamer0.10-plugins-ugly-0.10.10/AUTHORS
-  /usr/share/doc/gstreamer0.10-plugins-ugly-0.10.10/COPYING
-  /usr/share/doc/gstreamer0.10-plugins-ugly-0.10.10/ChangeLog
-  /usr/share/doc/gstreamer0.10-plugins-ugly-0.10.10/INSTALL
-  /usr/share/doc/gstreamer0.10-plugins-ugly-0.10.10/NEWS
-  /usr/share/doc/gstreamer0.10-plugins-ugly-0.10.10/README
+  /usr/lib/gstreamer-0.10/libgstsynaesthesia.la
+  /usr/share/doc/gstreamer0.10-plugins-ugly/AUTHORS
+  /usr/share/doc/gstreamer0.10-plugins-ugly/COPYING
+  /usr/share/doc/gstreamer0.10-plugins-ugly/ChangeLog
+  /usr/share/doc/gstreamer0.10-plugins-ugly/NEWS
+  /usr/share/doc/gstreamer0.10-plugins-ugly/README
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/ch01.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/ch02.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-0.10.devhelp
@@ -126,12 +131,14 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-plugin-rmdemux.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-plugin-siddec.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-plugin-synaesthesia.html
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-plugin-twolame.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-rademux.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-rdtmanager.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-rtspreal.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-rtspwms.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-siddec.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-synaesthesia.html
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-twolame.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-xingmux.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/home.png
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/index.html
@@ -143,6 +150,7 @@ Files included in the binary packages:
   /usr/share/locale/af/LC_MESSAGES/gst-plugins-ugly-0.10.mo
   /usr/share/locale/az/LC_MESSAGES/gst-plugins-ugly-0.10.mo
   /usr/share/locale/bg/LC_MESSAGES/gst-plugins-ugly-0.10.mo
+  /usr/share/locale/ca/LC_MESSAGES/gst-plugins-ugly-0.10.mo
   /usr/share/locale/cs/LC_MESSAGES/gst-plugins-ugly-0.10.mo
   /usr/share/locale/da/LC_MESSAGES/gst-plugins-ugly-0.10.mo
   /usr/share/locale/en_GB/LC_MESSAGES/gst-plugins-ugly-0.10.mo
@@ -152,7 +160,9 @@ Files included in the binary packages:
   /usr/share/locale/hu/LC_MESSAGES/gst-plugins-ugly-0.10.mo
   /usr/share/locale/id/LC_MESSAGES/gst-plugins-ugly-0.10.mo
   /usr/share/locale/it/LC_MESSAGES/gst-plugins-ugly-0.10.mo
+  /usr/share/locale/ja/LC_MESSAGES/gst-plugins-ugly-0.10.mo
   /usr/share/locale/lt/LC_MESSAGES/gst-plugins-ugly-0.10.mo
+  /usr/share/locale/mt/LC_MESSAGES/gst-plugins-ugly-0.10.mo
   /usr/share/locale/nb/LC_MESSAGES/gst-plugins-ugly-0.10.mo
   /usr/share/locale/nl/LC_MESSAGES/gst-plugins-ugly-0.10.mo
   /usr/share/locale/or/LC_MESSAGES/gst-plugins-ugly-0.10.mo
@@ -163,6 +173,7 @@ Files included in the binary packages:
   /usr/share/locale/sq/LC_MESSAGES/gst-plugins-ugly-0.10.mo
   /usr/share/locale/sr/LC_MESSAGES/gst-plugins-ugly-0.10.mo
   /usr/share/locale/sv/LC_MESSAGES/gst-plugins-ugly-0.10.mo
+  /usr/share/locale/tr/LC_MESSAGES/gst-plugins-ugly-0.10.mo
   /usr/share/locale/uk/LC_MESSAGES/gst-plugins-ugly-0.10.mo
   /usr/share/locale/vi/LC_MESSAGES/gst-plugins-ugly-0.10.mo
   /usr/share/locale/zh_CN/LC_MESSAGES/gst-plugins-ugly-0.10.mo
@@ -195,56 +206,16 @@ Files included in the binary packages:
   /usr/lib/gstreamer-0.10/cyggstsid.dll
   /usr/lib/gstreamer-0.10/libgstsid.la
 
+(gstreamer0.10-plugins-twolame)
+  /usr/lib/gstreamer-0.10/cyggsttwolame.dll
+  /usr/lib/gstreamer-0.10/libgsttwolame.la
+
 ------------------
 
 Port Notes:
 
------ version 0.10.10-2 -----
-Rebuilt for API changes in libdvdread.
-
------ version 0.10.10-1 -----
-Version bump.
-
------ version 0.10.9-1 -----
-Version bump.
-
------ version 0.10.8-1 -----
-Version bump.
-
------ version 0.10.7-1 -----
-Version bump.
-
------ version 0.10.6-3 -----
-Rebuilt.
-
------ version 0.10.6-2 -----
-Rebuilt for updated dependencies.
-
------ version 0.10.6-1 -----
-Version bump.
-
------ version 0.10.5-1 -----
-Version bump.
-Added sidplay plugin.
-
------ version 0.10.4-1 -----
-Version bump.
-
------ version 0.10.3-1 -----
-Version bump.
-External plugins will be built from separate source packages.
-
------ version 0.10.2-1 -----
-Version bump.
-Removed plugin import libraries.
-Additional external plugins: dvdread.
-
------ version 0.10.1-1 -----
-Version bump.
-
------ version 0.10.0-1 -----
-Initial release of 0.10 stable branch for Cygwin.
-External plugins: a52dec lame mad.
+----- version 0.10.11-1 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
