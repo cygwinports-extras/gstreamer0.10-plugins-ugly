@@ -57,24 +57,25 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gstreamer0.10-plugins-ugly-0.10.11-X-src.tar.bz2
+  unpack gstreamer0.10-plugins-ugly-0.10.12-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gstreamer0.10-plugins-ugly-0.10.11-X.cygport all
+  cygport ./gstreamer0.10-plugins-ugly-0.10.12-X.cygport all
 
 This will create:
-  /usr/src/gstreamer0.10-plugins-ugly-0.10.11-X-src.tar.bz2
-  /usr/src/gstreamer0.10-plugins-ugly-0.10.11-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-ugly-0.10.12-X-src.tar.bz2
+  /usr/src/gstreamer0.10-plugins-ugly-0.10.12-X.tar.bz2
 
-  /usr/src/gstreamer0.10-plugins-a52dec-0.10.11-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-cdio-0.10.11-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-dvdread-0.10.11-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-lame-0.10.11-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-mad-0.10.11-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-mpeg2dec-0.10.11-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-sidplay-0.10.11-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-twolame-0.10.11-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-a52dec-0.10.12-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-cdio-0.10.12-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-dvdread-0.10.12-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-lame-0.10.12-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-mad-0.10.12-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-mpeg2dec-0.10.12-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-sidplay-0.10.12-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-twolame-0.10.12-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-x264-0.10.12-X.tar.bz2
 
 -------------------------------------------
 
@@ -83,6 +84,7 @@ Files included in the binary packages:
 (gstreamer0.10-plugins-ugly)
   /usr/lib/gstreamer-0.10/cyggstasf.dll
   /usr/lib/gstreamer-0.10/cyggstdvdlpcmdec.dll
+  /usr/lib/gstreamer-0.10/cyggstdvdread.dll
   /usr/lib/gstreamer-0.10/cyggstdvdsub.dll
   /usr/lib/gstreamer-0.10/cyggstiec958.dll
   /usr/lib/gstreamer-0.10/cyggstmpegaudioparse.dll
@@ -91,6 +93,7 @@ Files included in the binary packages:
   /usr/lib/gstreamer-0.10/cyggstsynaesthesia.dll
   /usr/lib/gstreamer-0.10/libgstasf.la
   /usr/lib/gstreamer-0.10/libgstdvdlpcmdec.la
+  /usr/lib/gstreamer-0.10/libgstdvdread.la
   /usr/lib/gstreamer-0.10/libgstdvdsub.la
   /usr/lib/gstreamer-0.10/libgstiec958.la
   /usr/lib/gstreamer-0.10/libgstmpegaudioparse.la
@@ -112,6 +115,7 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-amrnbparse.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-cdiocddasrc.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-lame.html
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-lamemp3enc.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-mad.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-plugin-a52dec.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-plugin-amrnb.html
@@ -132,6 +136,7 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-plugin-siddec.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-plugin-synaesthesia.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-plugin-twolame.html
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-plugin-x264.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-rademux.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-rdtmanager.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-rtspreal.html
@@ -139,6 +144,7 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-siddec.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-synaesthesia.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-twolame.html
+  /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-x264enc.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/gst-plugins-ugly-plugins-xingmux.html
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/home.png
   /usr/share/gtk-doc/html/gst-plugins-ugly-plugins-0.10/index.html
@@ -210,9 +216,18 @@ Files included in the binary packages:
   /usr/lib/gstreamer-0.10/cyggsttwolame.dll
   /usr/lib/gstreamer-0.10/libgsttwolame.la
 
+(gstreamer0.10-plugins-x264)
+  /usr/lib/gstreamer-0.10/cyggstx264.dll
+  /usr/lib/gstreamer-0.10/libgstx264.la
+  /usr/share/gstreamer-0.10/presets/GstX264Enc.prs
+
 ------------------
 
 Port Notes:
+
+----- version 0.10.12-1 -----
+Version bump.
+Plugins added: x264 (moved from -bad).
 
 ----- version 0.10.11-1 -----
 Initial release for Cygwin 1.7.
