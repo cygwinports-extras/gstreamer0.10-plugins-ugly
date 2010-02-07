@@ -2,6 +2,8 @@ GST_PLUGINS_EXT="a52dec amrnb amrwb cdio dvdread lame mad mpeg2dec
                  sidplay twolame x264"
 inherit gst-plugins
 
+PATCH_URI="0.10.13-libx264-api.patch"
+
 PKG_NAMES="${PN}"
 PKG_HINTS="ugly"
 

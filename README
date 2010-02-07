@@ -3,9 +3,9 @@ gstreamer0.10-plugins-ugly
 'Ugly' plugins for the GStreamer media framework.
 
 Runtime requirements:
-  cygwin-1.7.0-62
-  libgcc1-4.3.4-1
-  libglib2.0_0-2.22.2-1
+  cygwin-1.7.1-1
+  libgcc1-4.3.4-3
+  libglib2.0_0-2.22.4-2
   libgstinterfaces0.10_0-0.10.25-1
   libgstreamer0.10_0-0.10.25-1
 (a52dec)
@@ -27,19 +27,21 @@ Runtime requirements:
   libstdc++6-4.3.4-1
 (twolame)
   libtwolame0-0.3.12-10
+(x264)
+  libx264_84-20100206-1
 
 Build requirements:
 (besides corresponding devel packages)
-  autoconf2.5-2.63-10
-  automake1.11-1.11-10
+  autoconf2.5-2.65-1
+  automake1.11-1.11.1-1
   binutils-2.19.51-1
-  cygport-0.9.10-1
+  cygport-0.9.80-1
   gawk-3.1.7-1
-  gcc4-core-4.3.4-1
-  gcc4-g++-4.3.4-1
+  gcc4-core-4.3.4-3
+  gcc4-g++-4.3.4-3
   gettext-devel-0.17-11
-  gtk-doc-1.11-2
-  libtool-2.2.7a-14
+  gtk-doc-1.13-1
+  libtool-2.2.7a-15
   make-3.81-2
   pkg-config-0.23b-10
   sed-4.1.5-2
@@ -78,6 +80,9 @@ This will create:
 -------------------------------------------
 
 Port Notes:
+
+----- version 0.10.13-2 -----
+Rebuilt for x264 ABI bump.
 
 ----- version 0.10.13-1 -----
 Version bump.
