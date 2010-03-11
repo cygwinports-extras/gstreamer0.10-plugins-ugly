@@ -6,11 +6,11 @@ Runtime requirements:
   cygwin-1.7.1-1
   libgcc1-4.3.4-3
   libglib2.0_0-2.22.4-2
-  libgstinterfaces0.10_0-0.10.25-1
-  libgstreamer0.10_0-0.10.25-1
+  libgstinterfaces0.10_0-0.10.28-1
+  libgstreamer0.10_0-0.10.28-1
 (a52dec)
   liba52_0-0.7.4-10
-  liboil0.3_0-0.3.16-1
+  liboil0.3_0-0.3.17-1
 (cdio)
   libcdio12-0.82-1
 (dvdread)
@@ -55,31 +55,34 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gstreamer0.10-plugins-ugly-0.10.13-X-src.tar.bz2
+  unpack gstreamer0.10-plugins-ugly-0.10.14-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gstreamer0.10-plugins-ugly-0.10.13-X.cygport all
+  cygport ./gstreamer0.10-plugins-ugly-0.10.14-X.cygport all
 
 This will create:
-  /usr/src/gstreamer0.10-plugins-ugly-0.10.13-X-src.tar.bz2
-  /usr/src/gstreamer0.10-plugins-ugly-0.10.13-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-ugly-0.10.14-X-src.tar.bz2
+  /usr/src/gstreamer0.10-plugins-ugly-0.10.14-X.tar.bz2
 
-  /usr/src/gstreamer0.10-plugins-a52dec-0.10.13-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-amrnb-0.10.13-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-amrwb-0.10.13-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-cdio-0.10.13-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-dvdread-0.10.13-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-lame-0.10.13-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-mad-0.10.13-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-mpeg2dec-0.10.13-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-sidplay-0.10.13-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-twolame-0.10.13-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-x264-0.10.13-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-a52dec-0.10.14-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-amrnb-0.10.14-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-amrwb-0.10.14-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-cdio-0.10.14-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-dvdread-0.10.14-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-lame-0.10.14-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-mad-0.10.14-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-mpeg2dec-0.10.14-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-sidplay-0.10.14-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-twolame-0.10.14-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-x264-0.10.14-X.tar.bz2
 
 -------------------------------------------
 
 Port Notes:
+
+----- version 0.10.14-1 -----
+Version bump.
 
 ----- version 0.10.13-2 -----
 Rebuilt for libcdio and libx264 ABI bumps.
