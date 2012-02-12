@@ -9,8 +9,8 @@ for ext in ${GST_PLUGINS_EXT}
 do
 	PKG_NAMES+=" ${PN%-ugly}-${ext}"
 	PKG_HINTS+=" ${ext}"
-	declare gstreamer0_10_plugins_${ext}_CONTENTS=" usr/lib/gstreamer-${PV_MAJ_MIN}/*gst${ext%play}*.*"
-	gstreamer0_10_plugins_ugly_CONTENTS+=" --exclude=*gst${ext%play}*.*"
+	declare gstreamer0_10_plugins_${ext}_CONTENTS=" usr/lib/gstreamer-${PV_MAJ_MIN}/cyggst${ext%play}*.dll"
+	gstreamer0_10_plugins_ugly_CONTENTS+=" --exclude=cyggst${ext%play}*.dll"
 
 	case ${ext} in
 		amrnb)
@@ -25,3 +25,5 @@ do
 done
 
 gstreamer0_10_plugins_ugly_CONTENTS+=" usr/"
+
+KEEP_LA_FILES="none"
