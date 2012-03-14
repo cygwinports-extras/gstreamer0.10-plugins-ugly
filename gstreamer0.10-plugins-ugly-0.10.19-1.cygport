@@ -1,11 +1,14 @@
-GST_PLUGINS_EXT="a52dec amrnb amrwb cdio dvdread lame mad mpeg2dec
-                 sidplay twolame x264"
+GST_PLUGINS_ENABLE="a52dec amrnb amrwb cdio dvdread lame mad mpeg2dec
+                    sidplay twolame x264"
+GST_PLUGINS_DISABLE=
 inherit gst-plugins
+
+PATCH_URI="0.10.19-amr-includedir.patch"
 
 PKG_NAMES="${PN}"
 PKG_HINTS="ugly"
 
-for ext in ${GST_PLUGINS_EXT}
+for ext in ${GST_PLUGINS_ENABLE}
 do
 	PKG_NAMES+=" ${PN%-ugly}-${ext}"
 	PKG_HINTS+=" ${ext}"
