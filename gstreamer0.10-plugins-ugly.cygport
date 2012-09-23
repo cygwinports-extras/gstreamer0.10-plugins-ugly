@@ -1,3 +1,13 @@
+NAME="gstreamer0.10-plugins-ugly"
+VERSION=0.10.19
+RELEASE=1
+CATEGORY="Audio Video"
+SUMMARY="GStreamer 0.10 Ugly plugins"
+DESCRIPTION="GStreamer Ugly Plug-ins is a set of plug-ins that have good
+quality and correct functionality, but distributing them might pose problems.
+The license on either the plug-ins or the supporting libraries might not be
+how we'd like. The code might be widely known to present patent problems in
+some jurisdictions."
 GST_PLUGINS_ENABLE="a52dec amrnb amrwb cdio dvdread lame mad mpeg2dec
                     sidplay twolame x264"
 GST_PLUGINS_DISABLE=
@@ -6,12 +16,11 @@ inherit gst-plugins
 PATCH_URI="0.10.19-amr-includedir.patch"
 
 PKG_NAMES="${PN}"
-PKG_HINTS="ugly"
 
 for ext in ${GST_PLUGINS_ENABLE}
 do
 	PKG_NAMES+=" ${PN%-ugly}-${ext}"
-	PKG_HINTS+=" ${ext}"
+	declare gstreamer0_10_plugins_${ext}_SUMMARY="GStreamer 0.10 ${ext} plugin"
 	declare gstreamer0_10_plugins_${ext}_CONTENTS=" usr/lib/gstreamer-${PV_MAJ_MIN}/cyggst${ext%play}*.dll"
 	gstreamer0_10_plugins_ugly_CONTENTS+=" --exclude=cyggst${ext%play}*.dll"
 

@@ -1,6 +1,0 @@
-category: Video
-requires: libgcc1 libglib2.0_0 libgstreamer0.10_0 libdvdread4
-external-source: gstreamer0.10-plugins-ugly
-sdesc: "DVDRead plugin for the GStreamer multimedia framework (0.10 branch)"
-ldesc: "DVDRead plugin for the GStreamer multimedia framework (0.10 branch)"
-
