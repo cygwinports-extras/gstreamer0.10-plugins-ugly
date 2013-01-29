@@ -13,7 +13,10 @@ GST_PLUGINS_ENABLE="a52dec amrnb amrwb cdio dvdread lame mad mpeg2dec
 GST_PLUGINS_DISABLE=
 inherit gst-plugins
 
-PATCH_URI="0.10.19-amr-includedir.patch"
+PATCH_URI="
+	http://cgit.freedesktop.org/gstreamer/gst-plugins-ugly/patch/ext/cdio?id=6700410
+	0.10.19-amr-includedir.patch
+"
 
 PKG_NAMES="${PN}"
 
