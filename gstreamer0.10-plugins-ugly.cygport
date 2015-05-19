@@ -1,6 +1,6 @@
 NAME="gstreamer0.10-plugins-ugly"
 VERSION=0.10.19
-RELEASE=3
+RELEASE=4
 CATEGORY="Audio Video"
 SUMMARY="GStreamer 0.10 Ugly plugins"
 DESCRIPTION="GStreamer Ugly Plug-ins is a set of plug-ins that have good
