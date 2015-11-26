@@ -1,6 +1,11 @@
+GST_PLUGINS_ENABLE="a52dec amrnb amrwb cdio dvdread lame mad mpeg2dec
+                    sidplay twolame x264"
+GST_PLUGINS_DISABLE=
+inherit gst-plugins
+
 NAME="gstreamer0.10-plugins-ugly"
 VERSION=0.10.19
-RELEASE=4
+RELEASE=5
 CATEGORY="Audio Video"
 SUMMARY="GStreamer 0.10 Ugly plugins"
 DESCRIPTION="GStreamer Ugly Plug-ins is a set of plug-ins that have good
@@ -8,10 +13,6 @@ quality and correct functionality, but distributing them might pose problems.
 The license on either the plug-ins or the supporting libraries might not be
 how we'd like. The code might be widely known to present patent problems in
 some jurisdictions."
-GST_PLUGINS_ENABLE="a52dec amrnb amrwb cdio dvdread lame mad mpeg2dec
-                    sidplay twolame x264"
-GST_PLUGINS_DISABLE=
-inherit gst-plugins
 
 PATCH_URI="
 	http://cgit.freedesktop.org/gstreamer/gst-plugins-ugly/patch/ext/cdio?id=6700410
@@ -22,21 +23,7 @@ PKG_NAMES="${NAME} ${NAME}-doc"
 
 for ext in ${GST_PLUGINS_ENABLE}
 do
-	PKG_NAMES+=" ${NAME%-ugly}-${ext}"
-	declare gstreamer0_10_plugins_${ext}_SUMMARY="GStreamer 0.10 ${ext} plugin"
-	declare gstreamer0_10_plugins_${ext}_CONTENTS=" usr/lib/gstreamer-${PV_MAJ_MIN}/cyggst${ext%play}*.dll"
-	gstreamer0_10_plugins_ugly_CONTENTS+=" --exclude=cyggst${ext%play}*.dll"
-
-	case ${ext} in
-		amrnb)
-			gstreamer0_10_plugins_amrnb_CONTENTS+=" usr/share/gstreamer-0.10/presets/GstAmrnbEnc.prs"
-			gstreamer0_10_plugins_ugly_CONTENTS+=" --exclude=GstAmrnbEnc.prs"
-		;;
-		x264)
-			gstreamer0_10_plugins_x264_CONTENTS+=" usr/share/gstreamer-0.10/presets/GstX264Enc.prs"
-			gstreamer0_10_plugins_ugly_CONTENTS+=" --exclude=GstX264Enc.prs"
-		;;
-	esac
+	gstreamer0_10_plugins_ugly_OBSOLETES+=" ${NAME%-ugly}-${ext}"
 done
 
 gstreamer0_10_plugins_ugly_CONTENTS+=" --exclude=gtk-doc usr/"
